@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStateValue } from '../ContextApi/StateProvider';
 import { actionTypes } from '../ContextApi/reducer'
+import SearchLocationInput from './SearchLocationInput';
 
 function Form({toStep3}) {
 
@@ -46,6 +47,8 @@ function Form({toStep3}) {
     <form onSubmit={setInfo}>
       <label>
         Address:
+        <SearchLocationInput />
+        <br/>
       <input value={address1}
       onChange={handleInputChange}
          type="text" name="name" />

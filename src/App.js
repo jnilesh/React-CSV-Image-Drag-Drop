@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import ReactDOM from 'react-dom'
 import './App.css';
 import DragAndDrop from './Components/DragAndDrop';
 import DropCSV from './Components/DropCSV';
@@ -41,9 +40,9 @@ function App() {
         </div> : ""}
       
 
-
       { fromCSV ? <DropCSV toStep3={toStep3} /> : ""}
       <br/>
+
 
       {scratch ? <Form toStep3={toStep3} /> : ""}
      
